@@ -82,7 +82,7 @@ def send_message(to_address):
     transactions = [{
         'address': to_address,
         'memo': memo,
-        'amount': 0.01
+        'amount': 0.001
     }]
     transaction_text = json.dumps(transactions)
     minconf = '0'
