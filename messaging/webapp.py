@@ -102,7 +102,7 @@ if __name__ == "__main__":
      parser.add_argument('--z')
      args = parser.parse_args()
      if not args.z:
-         raise Error('please pass --z')
+         raise Exception('please pass --z')
      else:
          context['z'] = args.z
 
