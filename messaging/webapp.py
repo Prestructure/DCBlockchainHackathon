@@ -10,6 +10,17 @@ import subprocess
 import time
 import thread
 
+
+#
+# python webapp.py --z <YOUR_Z_ADDRESS>
+#
+# to get messages, do GET localhost:5000/messages?seq=0
+# you will get back json with two fields: messages and seq
+##
+# to send a message do POST locahost:5000/messages/send/<RECEIVERS_Z_ADDRESS>
+# with json request body
+#
+
 app = Flask(__name__)
 
 context = {
@@ -37,7 +48,7 @@ def poll_for_incoming():
                     logging.info('parsed memo: %s', memo)
                     d = json.loads(memo)
                     logging.info('json memo: %s', d)
-                    context['transactions'][txid] = (t, memo)
+                    context['transactions'][txid] = (t, d)
                 except Exception as e:
                     logging.exception(e)
                     context['transactions'][txid] = (t, None)
