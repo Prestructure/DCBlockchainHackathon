@@ -1,0 +1,1 @@
+myPolicy = {"action":"1","patientId":"577021111","type":"*","provider":"*","recipients":{"provider":"*"},"expiration":"2017-12-31T23:59:59Z"}

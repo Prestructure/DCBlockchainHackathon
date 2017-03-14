@@ -1,0 +1,43 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "Policy",
+    "description": "A Policy for Patient",
+    "type": "object",
+    "properties": {
+        "effect": {
+	        "type": {"string":”ALLOW”,”string”:”DENY”}		
+        },
+        “Action”:”string”{
+	“options”:[”sendRecord”,”receiveRecord”,”deleteRecord”,”storeRecord”,”copyRecord”]
+        },
+        "patientId": {
+            "description": "The unique identifier for a patient",
+            "type": "integer"
+        },
+        "type": {
+            "description": "Type of Record",
+            "type": "string"
+            "loinc":"number"
+        },
+        "provider": {
+            "description":"National Provider Identifier"
+            "type": "number",
+            "minimum": 0
+        },
+        "recipients": {
+            "provider": "array",
+            "items": {
+                "provider": "number"
+            },
+            "minItems": 1,
+            "uniqueItems": true
+        },
+        "expiration": {
+	        "type": "string",
+	        "format": "date-time"
+	        
+        }
+        
+    },
+    "required": ["effect",”action”,"patientId", "type", "provider", "recipients"]
+}
