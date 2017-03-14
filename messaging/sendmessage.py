@@ -1,4 +1,5 @@
 #!/usr/bin/python
+# expects one json object per line
 
 import argparse
 import binascii
