@@ -17,7 +17,7 @@ def init():
     return zs[0]
 
 def getTransactions(Z):
-    output = subprocess.check_output(['zcash-cli', 'z_listreceivedbyaddress', Z])
+    output = subprocess.check_output(['zcash-cli', 'z_listreceivedbyaddress', Z, '0'])
     return json.loads(output)
 
 def process(tx):
@@ -28,11 +28,16 @@ def process(tx):
     processed.add(txid)
     try:
         logging.info('processing %s', txid)
-        memo = binascii.unhexlify(memo.strip('0'))
+        end = len(memo)
+        while (end > 1) and (memo[end - 2: end] == '00'):
+            end -= 2
+        memo = binascii.unhexlify(memo[0:end])
+        print memo
+        print 'memo: ' + memo
         d = json.loads(memo)
         return d
     except Exception as e:
-        logging.error(e)
+        logging.exception(e)
         return None
 
 while True:
