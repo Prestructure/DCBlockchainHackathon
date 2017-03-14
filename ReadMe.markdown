@@ -1,7 +1,7 @@
 Welcome to the MC/DC Encrypted Electronic Medical Records Authorization System
 ====================
 
-The MC/DC infrastructure leverages the ZCash blockchain to not only ensure request encryption, but also privacy around the existence of EMR transactions.  We elected to use the ZCash protocols in order avoid complexity of adding anonymity through smart contracts on the ethereum blockchain.   
+The MC/DC infrastructure leverages the ZCash blockchain to ensure not only request encryption, but also EMR transaction privacy.  We elected to use the ZCash protocols in order avoid complexity of adding anonymity through smart contracts on the ethereum blockchain.   
 
 Our Team:
 ---------------------
@@ -18,7 +18,7 @@ Sergio Ceron<br>
 Resources Used:
 ---------------------
 
-https://en.wikipedia.org/wiki/National_Provider_Identifier
+https://en.wikipedia.org/wiki/National_Provider_Identifier<br>
 https://www.pubpub.org/pub/medrec
 
 
