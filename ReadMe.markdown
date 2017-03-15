@@ -37,7 +37,17 @@ The Decision Engine detects, processes and responds to authorization requests co
 ### MC/DC Message Sender/Receiver
 This component plays a key role in leveraging the built-in encryption and anonymity offered by ZCash.  It is able to both write and read to the blockchain.  In doing so it ensures that information requests are untraceable, obfuscating both Patient and Provider.  No third party will be able to read a request or measure the request activity attributable to a patient or a provider.
 
+### Audit Application
+While third parties are not able to see the requests, the MC/DC system does allow for Patients and Providers to access an audit trail of their authorization requests and the respective responses.
 
+### AuthClient & API
+A service needs to handle the generation of requests to take action on Patient medical data, whether to send, receive, delete, store, copy the protected information.  Our aim is to provide an open API that allows any EMR system or Provider system to easily confirm the actions they take through the MC/DC system.  By engaging the Patient's policies in a secure way, they mitigate many risks relating to unauthorized release of PHI.
+
+
+Sample MetaData:
+---------------------
+
+Sample metadata for Policies and authorization requests can be found under the [JSON directory](/JSON)
 
 
 
