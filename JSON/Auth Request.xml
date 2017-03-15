@@ -1,0 +1,9 @@
+{“action”:”sendRecord”,
+"patientId":"577029111",
+"type":"XR",
+"provider":"1212565955",
+"recipients":
+[“0012325555", “676576576”]}
+zaddress:”ztVFoJAv7Svqt8qcmDPdE6nJ93e9hRnPw7CrTNd9gT1t4UNB5KkZXR2kZCWZ6PtEpYZpnWVPuHVBjQ7NnrKaCsgBXEtLh1V”,
+requestId:”A62947H3”,
+postmark:””}

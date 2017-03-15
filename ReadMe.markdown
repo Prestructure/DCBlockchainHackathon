@@ -54,8 +54,10 @@ Sample metadata for Policies and authorization requests can be found under the [
 Resources Used:
 ---------------------
 
-https://en.wikipedia.org/wiki/National_Provider_Identifier<br>
-https://www.pubpub.org/pub/medrec
+NPI https://en.wikipedia.org/wiki/National_Provider_Identifier<br>
+CMS NPI https://www.cms.gov/Outreach-and-Education/Medicare-Learning-Network-MLN/MLNProducts/downloads/NPIBooklet.pdf<br>
+USPS Electronic Postmark® https://www.cccinnovationcenter.com/wp-content/uploads/2017/01/USPS-EPM-Service-SDK-Interface-Document-v1H.pdf<br>
+MedRec https://www.pubpub.org/pub/medrec<br>
 
 
 
