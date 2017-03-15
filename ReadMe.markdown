@@ -3,7 +3,7 @@ Welcome to the MC/DC Encrypted Electronic Medical Records Authorization Audit Sy
 
 The MC/DC infrastructure leverages the ZCash blockchain to ensure medical record request metadata is private and secured. Provider to Provider as well as Patient-mediated exchange is authorized using the MC/DC PolicyService which receives and returns authorization requests through the ZCash blockchain transactions.  Only authorized parties (i.e. the Patient and the Provider requesting authorization) can audit their relevant transactions.        
 
-We elected to use ZCash protocols because of unique features that provide anonymity for patients and providers as well as strong encryption for request metadata.  Simulating these benefits on other blockchains would require complex smart contracts.  While we do not store any patient data on any components of our system, the ZCash blockchain does securely maintain auditing and provenance information for authorizations.
+We elected to use ZCash protocols because of unique features that provide anonymity for patients and providers as well as strong encryption for request metadata.  Simulating these benefits on other blockchains would require complex smart contracts.  While we do not store any patient data on any components of our system, the ZCash blockchain does securely maintain auditing information for requests and authorizations relating to sharing PHI.
 
 
 Our Team:
