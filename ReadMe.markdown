@@ -21,20 +21,20 @@ Infrastructure:
 ---------------------
 
 ### Diagram
-![Image of Components](https://github.com/Prestructure/DCBlockchainHackathon/tree/master/images/Diagram.png)
+![Image of Components](/images/Diagram.png)
 
 
 ### PolicyServer User Interface
 The PolicyServer has a user-interface for a Patient to create and manage their policies.  These policies may be set up by a patient's health insurance provider, or other authorized party.  These policies determine whether a request is approved or denied.
 Additional functionality can be implemented to allow Patients to be notified, view and approve or deny Provider requests to access or share their medical information, but the current system relies on pre-defined policies that act on behalf of the patient.
 
-###PolicyServer
+### PolicyServer
 The aforementioned policies reside within the Policy Server.  These policies are accessed via a REST API and can be edited by the Patient or an authorized agent acting on behalf of the patient, such as an insurance provider.
 
-###Decision Engine
+### Decision Engine
 The Decision Engine detects, processes and responds to authorization requests coming in via the ZCash blockchain.  
 
-###MC/DC Message Sender/Receiver
+### MC/DC Message Sender/Receiver
 This component plays a key role in leveraging the built-in encryption and anonymity offered by ZCash.  It is able to both write and read to the blockchain.  In doing so it ensures that information requests are untraceable, obfuscating both Patient and Provider.  No third party will be able to read a request or measure the request activity attributable to a patient or a provider.
 
 
