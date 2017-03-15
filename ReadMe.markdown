@@ -20,11 +20,11 @@ Sergio Ceron<br>
 Infrastructure:
 ---------------------
 
-###Diagram
+### Diagram
 ![Image of Components](https://github.com/Prestructure/DCBlockchainHackathon/tree/master/images/Diagram.png)
 
 
-###PolicyServer User Interface
+### PolicyServer User Interface
 The PolicyServer has a user-interface for a Patient to create and manage their policies.  These policies may be set up by a patient's health insurance provider, or other authorized party.  These policies determine whether a request is approved or denied.
 Additional functionality can be implemented to allow Patients to be notified, view and approve or deny Provider requests to access or share their medical information, but the current system relies on pre-defined policies that act on behalf of the patient.
 
