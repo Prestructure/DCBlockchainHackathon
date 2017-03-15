@@ -41,7 +41,7 @@ This component plays a key role in leveraging the built-in encryption and anonym
 While third parties are not able to see the requests, the MC/DC system does allow for Patients and Providers to access an audit trail of their authorization requests and the respective responses.
 
 ### AuthClient & API
-A service needs to handle the generation of requests to take action on Patient medical data, whether to send, receive, delete, store, copy the protected information.  Our aim is to provide an open API that allows any EMR system or Provider system to easily confirm the actions they take through the MC/DC system.  By engaging the Patient's policies in a secure way, they mitigate many risks relating to unauthorized release of PHI.
+A service needs to handle the generation of requests to take action on Patient medical data, whether to send, receive, delete, store, copy the protected information.  Our aim is to provide an open API that allows any EMR system or Provider to easily confirm the actions they plan to take through the MC/DC system.  By engaging the Patient's policies in a secure way, Providers mitigate many risks relating to unauthorized release of PHI.
 
 
 Sample MetaData:
