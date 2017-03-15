@@ -1,4 +1,4 @@
-Welcome to the MC/DC Encrypted Electronic Medical Records Authorization Audit System
+Welcome to the MC/DC Encrypted EMR Authorization & Audit System
 ====================
 
 The MC/DC infrastructure leverages the ZCash blockchain to ensure medical record request metadata is private and secured. Provider to Provider as well as Patient-mediated exchange is authorized using the MC/DC PolicyService which receives and returns authorization requests through the ZCash blockchain transactions.  Only authorized parties (i.e. the Patient and the Provider requesting authorization) can audit their relevant transactions.        
